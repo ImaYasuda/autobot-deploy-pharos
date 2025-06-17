@@ -104,7 +104,9 @@
 - Pastikan semua data di .env sudah benar.
 
 TX_PER_WALLET = 10 → ubah jadi berapa pun kamu mau.
+
 await new Promise(... → delay antar TX (misalnya 1000ms = 1 detik).
+
 Kamu bisa paralelkan, tapi harus hati-hati dengan nonce.
 
 

@@ -100,13 +100,33 @@
 
 ---
 
-**Catatan:**  
-- Pastikan semua data di .env sudah benar.
+cara no2 
+# Pharos Autobot Deploy
 
-TX_PER_WALLET = 10 → ubah jadi berapa pun kamu mau.
+🔁 Auto deploy transaction using multiple wallets on the Pharos testnet.
 
-await new Promise(... → delay antar TX (misalnya 1000ms = 1 detik).
+## 🧪 Features
 
-Kamu bisa paralelkan, tapi harus hati-hati dengan nonce.
+- 🧠 Support unlimited private keys
+- 🔁 Sends multiple transactions per wallet (default 10)
+- 🕒 Includes delay to avoid nonce/gas errors
+
+## ⚙️ How to Use
+
+```bash
+# 1. Clone the repo
+git clone https://github.com/ImaYasuda/autobot-deploy-pharos.git
+cd autobot-deploy-pharos
+
+# 2. Install dependencies
+npm install
+
+# 3. Copy and edit environment config
+cp .env.example .env
+# then edit `.env` to fill in your private keys and other values
+
+# 4. Run the bot
+node autobot.js
+
 
 
